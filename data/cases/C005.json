@@ -1,0 +1,64 @@
+{
+  "case_id": "C005",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Ivan"
+  },
+  "entity": {
+    "legal_name": "Meridian Holdings Ltd",
+    "registration_number": "REG-005-2017",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XP",
+    "operating_jurisdictions": [
+      "XP"
+    ],
+    "incorporated_on": "2017-01-09",
+    "sector": "import_export",
+    "expected_monthly_volume_usd": 200000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2017-01-09"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Ivan Sokol",
+      "type": "individual",
+      "ownership_pct": 100,
+      "dob": "1975-03-19",
+      "nationality": "XP",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Ivan Sokol",
+      "dob": "1975-03-19",
+      "nationality": "XP"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": []
+}

@@ -1,0 +1,72 @@
+{
+  "case_id": "C007",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Viktor"
+  },
+  "entity": {
+    "legal_name": "Coastal Metals Trading Ltd",
+    "registration_number": "REG-007-2015",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XC",
+    "operating_jurisdictions": [
+      "XC"
+    ],
+    "incorporated_on": "2015-05-11",
+    "sector": "precious_metals",
+    "expected_monthly_volume_usd": 900000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2015-05-11"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Viktor Adamescu",
+      "type": "individual",
+      "ownership_pct": 100,
+      "dob": "1970-12-01",
+      "nationality": "XJ",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Viktor Adamescu",
+      "dob": "1970-12-01",
+      "nationality": "XJ"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": [
+    {
+      "subject": "Viktor Adamescu",
+      "list": "sanctions",
+      "matched_name": "Viktor Adamescu",
+      "match_score": 0.97,
+      "list_record": {
+        "dob": "1970-12-01",
+        "country": "XJ",
+        "subject_type": "individual"
+      }
+    }
+  ]
+}

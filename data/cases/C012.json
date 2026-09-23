@@ -1,0 +1,75 @@
+{
+  "case_id": "C012",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Arjun"
+  },
+  "entity": {
+    "legal_name": "Pinecrest Components Ltd",
+    "registration_number": "REG-012-2012",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XA",
+    "operating_jurisdictions": [
+      "XA"
+    ],
+    "incorporated_on": "2012-02-20",
+    "sector": "manufacturing",
+    "expected_monthly_volume_usd": 220000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2012-02-20"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Arjun Mehta",
+      "type": "individual",
+      "ownership_pct": 100,
+      "dob": "1978-05-25",
+      "nationality": "XA",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Arjun Mehta",
+      "dob": "1978-05-25",
+      "nationality": "XA"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": [
+    {
+      "subject": "Arjun Mehta",
+      "list": "sanctions",
+      "matched_name": "Arjun Mehra",
+      "match_score": 0.9,
+      "list_record": {
+        "country": "XA",
+        "subject_type": "individual"
+      }
+    }
+  ]
+}

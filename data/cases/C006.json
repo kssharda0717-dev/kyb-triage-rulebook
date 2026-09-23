@@ -1,0 +1,87 @@
+{
+  "case_id": "C006",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Daniel"
+  },
+  "entity": {
+    "legal_name": "Northgate Analytics Ltd",
+    "registration_number": "REG-006-2016",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XA",
+    "operating_jurisdictions": [
+      "XA"
+    ],
+    "incorporated_on": "2016-10-03",
+    "sector": "software",
+    "expected_monthly_volume_usd": 180000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2016-10-03"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Daniel Okafor",
+      "type": "individual",
+      "ownership_pct": 100,
+      "dob": "1983-08-17",
+      "nationality": "XA",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Daniel Okafor",
+      "dob": "1983-08-17",
+      "nationality": "XA"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": [
+    {
+      "subject": "Daniel Okafor",
+      "list": "sanctions",
+      "matched_name": "Daniel Okafor",
+      "match_score": 1.0,
+      "list_record": {
+        "dob": "1961-02-02",
+        "country": "XH",
+        "subject_type": "individual"
+      }
+    },
+    {
+      "subject": "Northgate Analytics Ltd",
+      "list": "adverse_media",
+      "matched_name": "Northgate Analytic Group",
+      "match_score": 0.68,
+      "severity": "low",
+      "list_record": {
+        "country": "XJ",
+        "subject_type": "entity"
+      }
+    }
+  ]
+}

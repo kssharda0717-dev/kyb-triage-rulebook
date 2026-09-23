@@ -1,0 +1,72 @@
+{
+  "case_id": "C009",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Chloe"
+  },
+  "entity": {
+    "legal_name": "Lumen Retail Co Ltd",
+    "registration_number": "REG-009-2021",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XA",
+    "operating_jurisdictions": [
+      "XA"
+    ],
+    "incorporated_on": "2021-11-30",
+    "sector": "ecommerce",
+    "expected_monthly_volume_usd": 90000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2021-11-30"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Chloe Martin",
+      "type": "individual",
+      "ownership_pct": 50,
+      "dob": "1992-06-06",
+      "nationality": "XA",
+      "id_verified": true
+    },
+    {
+      "name": "Ravi Shah",
+      "type": "individual",
+      "ownership_pct": 30,
+      "dob": "1987-10-10",
+      "nationality": "XA",
+      "id_verified": false
+    }
+  ],
+  "directors": [
+    {
+      "name": "Chloe Martin",
+      "dob": "1992-06-06",
+      "nationality": "XA"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": []
+}

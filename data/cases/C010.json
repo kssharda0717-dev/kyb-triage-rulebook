@@ -1,0 +1,64 @@
+{
+  "case_id": "C010",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Anders"
+  },
+  "entity": {
+    "legal_name": "Fairwind Ventures Ltd",
+    "registration_number": "REG-010-2019",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XB",
+    "operating_jurisdictions": [
+      "XB"
+    ],
+    "incorporated_on": "2019-07-07",
+    "sector": "professional_services",
+    "expected_monthly_volume_usd": 150000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2019-07-07"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Grace Liu",
+      "type": "individual",
+      "ownership_pct": 100,
+      "dob": "1980-03-03",
+      "nationality": "XB",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Anders Holm",
+      "dob": "1977-08-08",
+      "nationality": "XB"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 3,
+    "bearer_shares": false,
+    "nominee_shareholders": true
+  },
+  "screening": []
+}

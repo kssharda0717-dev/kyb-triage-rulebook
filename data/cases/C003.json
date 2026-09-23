@@ -1,0 +1,68 @@
+{
+  "case_id": "C003",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Priya"
+  },
+  "entity": {
+    "legal_name": "Kestrel Design Studio Ltd",
+    "registration_number": "REG-003-2020",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XB",
+    "operating_jurisdictions": [
+      "XB"
+    ],
+    "incorporated_on": "2020-09-14",
+    "sector": "professional_services",
+    "expected_monthly_volume_usd": 60000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2020-09-14"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2025-06-01"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Priya Nair",
+      "type": "individual",
+      "ownership_pct": 60,
+      "dob": "1990-07-21",
+      "nationality": "XB",
+      "id_verified": true
+    },
+    {
+      "name": "Lena Fischer",
+      "type": "individual",
+      "ownership_pct": 40,
+      "dob": "1988-02-09",
+      "nationality": "XB",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Priya Nair",
+      "dob": "1990-07-21",
+      "nationality": "XB"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": []
+}

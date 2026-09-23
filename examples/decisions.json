@@ -1,0 +1,2753 @@
+[
+  {
+    "case_id": "C001",
+    "legal_name": "Brightline Software Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "36992005c6cdeba14e12625d2dc63df7ec5af48d06b90ba34550064415d49c77",
+    "engine_version": "1.0.0",
+    "outcome": "AUTO_APPROVE",
+    "outcome_label": "Approved automatically, trading-ready",
+    "owner": "System",
+    "sla_hours": 0,
+    "due_by": "2026-09-23T10:00:00+00:00",
+    "deciding_rules": [],
+    "reasons": [
+      "No rule fired; low risk and eligible for auto-approval (POL-7.1)"
+    ],
+    "risk": {
+      "score": 0,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XA (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "software (low)",
+          "points": 0,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "90 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 120,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'software' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'software' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 120,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "2 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 0 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C002",
+    "legal_name": "Harbour Freight Traders Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "520b09235f2cd067a595ed5d6fe6e52bc964b9d9ae3834815db387e710af055d",
+    "engine_version": "1.0.0",
+    "outcome": "ANALYST_REVIEW",
+    "outcome_label": "Analyst review",
+    "owner": "Compliance analyst",
+    "sla_hours": 8,
+    "due_by": "2026-09-23T18:00:00+00:00",
+    "deciding_rules": [
+      "R-RISK-01"
+    ],
+    "reasons": [
+      "R-RISK-01 Risk band eligible for auto-approval: score 40 is medium risk: not eligible for auto-approval"
+    ],
+    "risk": {
+      "score": 40,
+      "band": "medium",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XM (medium)",
+          "points": 15,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "import_export (medium)",
+          "points": 15,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "99 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 400,000",
+          "points": 10,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'import_export' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'import_export' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 400,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": "review",
+        "fired": true,
+        "detail": "score 40 is medium risk: not eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C003",
+    "legal_name": "Kestrel Design Studio Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "f9b0f5b6917eca6495e38d42e06d72f7e1085cd41efa78c50aea2f3e4257f5c6",
+    "engine_version": "1.0.0",
+    "outcome": "INCOMPLETE",
+    "outcome_label": "Waiting on client information",
+    "owner": "Compliance analyst (outreach)",
+    "sla_hours": 4,
+    "due_by": "2026-09-23T14:00:00+00:00",
+    "deciding_rules": [
+      "R-DOC-01",
+      "R-DOC-02"
+    ],
+    "reasons": [
+      "R-DOC-01 Required documents present: missing: proof_of_address",
+      "R-DOC-02 Documents recent enough to rely on: register_of_directors is 479 days old (limit 365)"
+    ],
+    "risk": {
+      "score": 0,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XB (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "professional_services (low)",
+          "points": 0,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "72 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 60,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": "incomplete",
+        "fired": true,
+        "detail": "missing: proof_of_address"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": "incomplete",
+        "fired": true,
+        "detail": "register_of_directors is 479 days old (limit 365)"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'professional_services' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'professional_services' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 60,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "2 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 0 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [
+      "Provide proof of address",
+      "Provide a register of directors dated within the last 365 days"
+    ],
+    "hits": [],
+    "decision_ready": false,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C004",
+    "legal_name": "Orbit Digital Exchange Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "0cedfc3df9d0329860fd381bd7d10f07c9ddd756f1fd392438247d7b74b798fe",
+    "engine_version": "1.0.0",
+    "outcome": "MLRO_ESCALATION",
+    "outcome_label": "MLRO decision required",
+    "owner": "Group MLRO",
+    "sla_hours": 24,
+    "due_by": "2026-09-24T10:00:00+00:00",
+    "deciding_rules": [
+      "R-JUR-02",
+      "R-RISK-01"
+    ],
+    "reasons": [
+      "R-JUR-02 High-risk jurisdiction needs EDD: high-risk: XH",
+      "R-RISK-01 Risk band eligible for auto-approval: score 85 is high risk: not eligible for auto-approval"
+    ],
+    "risk": {
+      "score": 85,
+      "band": "high",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XH (high)",
+          "points": 35,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "crypto_exchange (high)",
+          "points": 30,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "43 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 3,000,000",
+          "points": 20,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": "escalate",
+        "fired": true,
+        "detail": "high-risk: XH"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'crypto_exchange' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'crypto_exchange' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 3,000,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": "escalate",
+        "fired": true,
+        "detail": "score 85 is high risk: not eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C005",
+    "legal_name": "Meridian Holdings Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "281cc1e192d6e8c80a2eb364bdf13e02a4a35657bbcd44801ded15d6a4451d2d",
+    "engine_version": "1.0.0",
+    "outcome": "REJECT",
+    "outcome_label": "Rejected",
+    "owner": "Compliance analyst (notification)",
+    "sla_hours": 24,
+    "due_by": "2026-09-24T10:00:00+00:00",
+    "deciding_rules": [
+      "R-JUR-01"
+    ],
+    "reasons": [
+      "R-JUR-01 No prohibited jurisdiction: prohibited: XP"
+    ],
+    "risk": {
+      "score": 15,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Sector",
+          "value": "import_export (medium)",
+          "points": 15,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "116 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 200,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": "reject",
+        "fired": true,
+        "detail": "prohibited: XP"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'import_export' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'import_export' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 200,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 15 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C006",
+    "legal_name": "Northgate Analytics Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "4f90bf7cab674f3d7338a25dd4897efddcba4cb6fde9b5c326047da83014a4ed",
+    "engine_version": "1.0.0",
+    "outcome": "AUTO_APPROVE",
+    "outcome_label": "Approved automatically, trading-ready",
+    "owner": "System",
+    "sla_hours": 0,
+    "due_by": "2026-09-23T10:00:00+00:00",
+    "deciding_rules": [],
+    "reasons": [
+      "No rule fired; low risk and eligible for auto-approval (POL-7.1)"
+    ],
+    "risk": {
+      "score": 0,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XA (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "software (low)",
+          "points": 0,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "119 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 180,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'software' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'software' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 180,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 0 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [
+      {
+        "subject": "Daniel Okafor",
+        "list": "sanctions",
+        "matched_name": "Daniel Okafor",
+        "match_score": 1.0,
+        "list_record": {
+          "dob": "1961-02-02",
+          "country": "XH",
+          "subject_type": "individual"
+        },
+        "state": "FALSE_POSITIVE",
+        "reason": "identifiers disagree: dob, country",
+        "matches": [],
+        "mismatches": [
+          "dob",
+          "country"
+        ],
+        "unknown": [],
+        "role": "owner"
+      },
+      {
+        "subject": "Northgate Analytics Ltd",
+        "list": "adverse_media",
+        "matched_name": "Northgate Analytic Group",
+        "match_score": 0.68,
+        "severity": "low",
+        "list_record": {
+          "country": "XJ",
+          "subject_type": "entity"
+        },
+        "state": "FALSE_POSITIVE",
+        "reason": "match score 0.68 below 0.75 and no identifier agrees",
+        "matches": [],
+        "mismatches": [
+          "country"
+        ],
+        "unknown": [
+          "dob"
+        ],
+        "role": "entity"
+      }
+    ],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C007",
+    "legal_name": "Coastal Metals Trading Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "76e360a8c61c66643c7e8d5edcac785ce269c68c4d2877329642dd27b965fabc",
+    "engine_version": "1.0.0",
+    "outcome": "MLRO_ESCALATION",
+    "outcome_label": "MLRO decision required",
+    "owner": "Group MLRO",
+    "sla_hours": 24,
+    "due_by": "2026-09-24T10:00:00+00:00",
+    "deciding_rules": [
+      "R-SCR-01"
+    ],
+    "reasons": [
+      "R-SCR-01 No confirmed sanctions match: sanctions hit on Viktor Adamescu (owner) vs 'Viktor Adamescu': match score 0.97 and identifiers agree: dob, country"
+    ],
+    "risk": {
+      "score": 40,
+      "band": "medium",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XC (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "precious_metals (high)",
+          "points": 30,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "136 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 900,000",
+          "points": 10,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": "incomplete",
+        "fired": true,
+        "detail": "missing: ubo_declaration"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'precious_metals' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'precious_metals' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 900,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": "escalate_immediate",
+        "fired": true,
+        "detail": "sanctions hit on Viktor Adamescu (owner) vs 'Viktor Adamescu': match score 0.97 and identifiers agree: dob, country"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": "review",
+        "fired": true,
+        "detail": "score 40 is medium risk: not eligible for auto-approval"
+      }
+    ],
+    "open_items": [
+      "Provide ubo declaration"
+    ],
+    "hits": [
+      {
+        "subject": "Viktor Adamescu",
+        "list": "sanctions",
+        "matched_name": "Viktor Adamescu",
+        "match_score": 0.97,
+        "list_record": {
+          "dob": "1970-12-01",
+          "country": "XJ",
+          "subject_type": "individual"
+        },
+        "state": "CONFIRMED",
+        "reason": "match score 0.97 and identifiers agree: dob, country",
+        "matches": [
+          "dob",
+          "country"
+        ],
+        "mismatches": [],
+        "unknown": [],
+        "role": "owner"
+      }
+    ],
+    "decision_ready": false,
+    "sent_before_complete": true
+  },
+  {
+    "case_id": "C008",
+    "legal_name": "Aster Payments Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "a9682e45d953657337850f5fc3e1e91dc1da6838094f1165af1bc746ed6af585",
+    "engine_version": "1.0.0",
+    "outcome": "MLRO_ESCALATION",
+    "outcome_label": "MLRO decision required",
+    "owner": "Group MLRO",
+    "sla_hours": 24,
+    "due_by": "2026-09-24T10:00:00+00:00",
+    "deciding_rules": [
+      "R-SCR-02",
+      "R-RISK-01"
+    ],
+    "reasons": [
+      "R-SCR-02 Confirmed PEP needs EDD: pep hit on Helena Varga (director) vs 'Helena Varga': match score 0.96 and identifiers agree: dob, country",
+      "R-RISK-01 Risk band eligible for auto-approval: score 70 is high risk: not eligible for auto-approval"
+    ],
+    "risk": {
+      "score": 70,
+      "band": "high",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XB (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "money_services (high)",
+          "points": 30,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "80 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 800,000",
+          "points": 10,
+          "policy": "POL-4.3"
+        },
+        {
+          "factor": "Confirmed PEP",
+          "value": "yes",
+          "points": 30,
+          "policy": "POL-6.4"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'money_services' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'money_services' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 800,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": "escalate",
+        "fired": true,
+        "detail": "pep hit on Helena Varga (director) vs 'Helena Varga': match score 0.96 and identifiers agree: dob, country"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": "escalate",
+        "fired": true,
+        "detail": "score 70 is high risk: not eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [
+      {
+        "subject": "Helena Varga",
+        "list": "pep",
+        "matched_name": "Helena Varga",
+        "match_score": 0.96,
+        "list_record": {
+          "dob": "1968-04-04",
+          "country": "XB",
+          "subject_type": "individual"
+        },
+        "state": "CONFIRMED",
+        "reason": "match score 0.96 and identifiers agree: dob, country",
+        "matches": [
+          "dob",
+          "country"
+        ],
+        "mismatches": [],
+        "unknown": [],
+        "role": "director"
+      }
+    ],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C009",
+    "legal_name": "Lumen Retail Co Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "5e790f017d9d2560cb26f63d6304eba1fad39f9a0ba1b9a0d96b29308a53abf7",
+    "engine_version": "1.0.0",
+    "outcome": "INCOMPLETE",
+    "outcome_label": "Waiting on client information",
+    "owner": "Compliance analyst (outreach)",
+    "sla_hours": 4,
+    "due_by": "2026-09-23T14:00:00+00:00",
+    "deciding_rules": [
+      "R-UBO-01",
+      "R-UBO-02"
+    ],
+    "reasons": [
+      "R-UBO-01 UBOs identified and verified: unverified UBO: Ravi Shah (30%)",
+      "R-UBO-02 Ownership reconciles to 100%: declared ownership totals 80%"
+    ],
+    "risk": {
+      "score": 15,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XA (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "ecommerce (medium)",
+          "points": 15,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "57 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 90,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'ecommerce' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'ecommerce' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 90,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": "incomplete",
+        "fired": true,
+        "detail": "unverified UBO: Ravi Shah (30%)"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": "incomplete",
+        "fired": true,
+        "detail": "declared ownership totals 80%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 15 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [
+      "Provide verified identity documents for Ravi Shah (30%)",
+      "Declared ownership totals 80%; account for the remaining 20%"
+    ],
+    "hits": [],
+    "decision_ready": false,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C010",
+    "legal_name": "Fairwind Ventures Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "37c8abc80b4fa08617b1a4e95173d009c2c06930e96e5053f910f2b231eea2fc",
+    "engine_version": "1.0.0",
+    "outcome": "MLRO_ESCALATION",
+    "outcome_label": "MLRO decision required",
+    "owner": "Group MLRO",
+    "sla_hours": 24,
+    "due_by": "2026-09-24T10:00:00+00:00",
+    "deciding_rules": [
+      "R-UBO-04"
+    ],
+    "reasons": [
+      "R-UBO-04 No bearer shares or nominees: declared: nominee shareholders"
+    ],
+    "risk": {
+      "score": 15,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XB (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "professional_services (low)",
+          "points": 0,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "86 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 150,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        },
+        {
+          "factor": "Ownership depth",
+          "value": "3 layers",
+          "points": 15,
+          "policy": "POL-5.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'professional_services' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'professional_services' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 150,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": "review",
+        "fired": true,
+        "detail": "3 layers (limit 2)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": "escalate",
+        "fired": true,
+        "detail": "declared: nominee shareholders"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 15 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C011",
+    "legal_name": "Silverline Gaming Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "86200761c43711b759169118d1e28cec231ba017e4ace321ea7493c1b3edbfd0",
+    "engine_version": "1.0.0",
+    "outcome": "REJECT",
+    "outcome_label": "Rejected",
+    "owner": "Compliance analyst (notification)",
+    "sla_hours": 24,
+    "due_by": "2026-09-24T10:00:00+00:00",
+    "deciding_rules": [
+      "R-SEC-01"
+    ],
+    "reasons": [
+      "R-SEC-01 No prohibited sector: sector 'unlicensed_gambling' is prohibited"
+    ],
+    "risk": {
+      "score": 10,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XA (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Company age",
+          "value": "53 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 500,000",
+          "points": 10,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": "reject",
+        "fired": true,
+        "detail": "sector 'unlicensed_gambling' is prohibited"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'unlicensed_gambling' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 500,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 10 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [],
+    "decision_ready": true,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C012",
+    "legal_name": "Pinecrest Components Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "7886a546f12ab0f36685216f1aae9cbd186c3cf7fd1abbd8a01d57739261bd48",
+    "engine_version": "1.0.0",
+    "outcome": "ANALYST_REVIEW",
+    "outcome_label": "Analyst review",
+    "owner": "Compliance analyst",
+    "sla_hours": 8,
+    "due_by": "2026-09-23T18:00:00+00:00",
+    "deciding_rules": [
+      "R-SCR-05"
+    ],
+    "reasons": [
+      "R-SCR-05 No unresolved potential matches: sanctions hit on Arjun Mehta (owner) vs 'Arjun Mehra': match score 0.90; agree: country; disagree: none; not held: dob"
+    ],
+    "risk": {
+      "score": 0,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XA (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "manufacturing (low)",
+          "points": 0,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "175 months",
+          "points": 0,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 220,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'manufacturing' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'manufacturing' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 220,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": "review",
+        "fired": true,
+        "detail": "sanctions hit on Arjun Mehta (owner) vs 'Arjun Mehra': match score 0.90; agree: country; disagree: none; not held: dob"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 0 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [
+      "Resolve sanctions potential match on Arjun Mehta vs 'Arjun Mehra'"
+    ],
+    "hits": [
+      {
+        "subject": "Arjun Mehta",
+        "list": "sanctions",
+        "matched_name": "Arjun Mehra",
+        "match_score": 0.9,
+        "list_record": {
+          "country": "XA",
+          "subject_type": "individual"
+        },
+        "state": "POTENTIAL",
+        "reason": "match score 0.90; agree: country; disagree: none; not held: dob",
+        "matches": [
+          "country"
+        ],
+        "mismatches": [],
+        "unknown": [
+          "dob"
+        ],
+        "role": "owner"
+      }
+    ],
+    "decision_ready": false,
+    "sent_before_complete": false
+  },
+  {
+    "case_id": "C013",
+    "legal_name": "Tidewater Labs Ltd",
+    "submitted_at": "2026-09-23T08:30:00Z",
+    "as_of": "2026-09-23T10:00:00+00:00",
+    "rulebook_version": "1.0.0",
+    "rulebook_hash": "e1a4006f40aa0db3f559381cb8d3aec88942233ca6081132a3da1998438f8f2b",
+    "case_hash": "2511471493f169010a5fa9a1183c8a7f1d5fe36990f52e5e402ff519bb6b52ff",
+    "engine_version": "1.0.0",
+    "outcome": "AUTO_APPROVE",
+    "outcome_label": "Approved automatically, trading-ready",
+    "owner": "System",
+    "sla_hours": 0,
+    "due_by": "2026-09-23T10:00:00+00:00",
+    "deciding_rules": [],
+    "reasons": [
+      "No rule fired; low risk and eligible for auto-approval (POL-7.1)"
+    ],
+    "risk": {
+      "score": 10,
+      "band": "low",
+      "breakdown": [
+        {
+          "factor": "Jurisdiction (highest rated)",
+          "value": "XA (low)",
+          "points": 0,
+          "policy": "POL-3.4"
+        },
+        {
+          "factor": "Sector",
+          "value": "software (low)",
+          "points": 0,
+          "policy": "POL-4.2"
+        },
+        {
+          "factor": "Company age",
+          "value": "5 months",
+          "points": 10,
+          "policy": "POL-4.4"
+        },
+        {
+          "factor": "Expected monthly volume",
+          "value": "USD 50,000",
+          "points": 0,
+          "policy": "POL-4.3"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "id": "R-DOC-01",
+        "name": "Required documents present",
+        "policy": "POL-2.1",
+        "effect": null,
+        "fired": false,
+        "detail": "all 5 required documents held"
+      },
+      {
+        "id": "R-DOC-02",
+        "name": "Documents recent enough to rely on",
+        "policy": "POL-2.2",
+        "effect": null,
+        "fired": false,
+        "detail": "all dated documents within limits"
+      },
+      {
+        "id": "R-JUR-01",
+        "name": "No prohibited jurisdiction",
+        "policy": "POL-3.1",
+        "effect": null,
+        "fired": false,
+        "detail": "none prohibited"
+      },
+      {
+        "id": "R-JUR-02",
+        "name": "High-risk jurisdiction needs EDD",
+        "policy": "POL-3.2",
+        "effect": null,
+        "fired": false,
+        "detail": "none high-risk"
+      },
+      {
+        "id": "R-JUR-03",
+        "name": "Every jurisdiction is rated",
+        "policy": "POL-3.3",
+        "effect": null,
+        "fired": false,
+        "detail": "all rated"
+      },
+      {
+        "id": "R-SEC-01",
+        "name": "No prohibited sector",
+        "policy": "POL-4.1",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'software' permitted"
+      },
+      {
+        "id": "R-SEC-02",
+        "name": "Sector is rated",
+        "policy": "POL-4.5",
+        "effect": null,
+        "fired": false,
+        "detail": "sector 'software' rated"
+      },
+      {
+        "id": "R-VOL-01",
+        "name": "Expected volume under escalation threshold",
+        "policy": "POL-4.3",
+        "effect": null,
+        "fired": false,
+        "detail": "expected USD 50,000/month"
+      },
+      {
+        "id": "R-UBO-01",
+        "name": "UBOs identified and verified",
+        "policy": "POL-5.1",
+        "effect": null,
+        "fired": false,
+        "detail": "1 UBO(s) identified and verified"
+      },
+      {
+        "id": "R-UBO-02",
+        "name": "Ownership reconciles to 100%",
+        "policy": "POL-5.2",
+        "effect": null,
+        "fired": false,
+        "detail": "declared ownership totals 100%"
+      },
+      {
+        "id": "R-UBO-03",
+        "name": "Ownership chain within depth limit",
+        "policy": "POL-5.3",
+        "effect": null,
+        "fired": false,
+        "detail": "1 layer(s)"
+      },
+      {
+        "id": "R-UBO-04",
+        "name": "No bearer shares or nominees",
+        "policy": "POL-5.4",
+        "effect": null,
+        "fired": false,
+        "detail": "none declared"
+      },
+      {
+        "id": "R-SCR-01",
+        "name": "No confirmed sanctions match",
+        "policy": "POL-6.3",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed sanctions match"
+      },
+      {
+        "id": "R-SCR-02",
+        "name": "Confirmed PEP needs EDD",
+        "policy": "POL-6.4",
+        "effect": null,
+        "fired": false,
+        "detail": "no confirmed PEP"
+      },
+      {
+        "id": "R-SCR-03",
+        "name": "High-severity adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-04",
+        "name": "Other confirmed adverse media",
+        "policy": "POL-6.5",
+        "effect": null,
+        "fired": false,
+        "detail": "none"
+      },
+      {
+        "id": "R-SCR-05",
+        "name": "No unresolved potential matches",
+        "policy": "POL-6.6",
+        "effect": null,
+        "fired": false,
+        "detail": "all hits resolved by rule"
+      },
+      {
+        "id": "R-RISK-01",
+        "name": "Risk band eligible for auto-approval",
+        "policy": "POL-7.1",
+        "effect": null,
+        "fired": false,
+        "detail": "score 10 is low risk: eligible for auto-approval"
+      }
+    ],
+    "open_items": [],
+    "hits": [
+      {
+        "subject": "Ella Brooks",
+        "list": "sanctions",
+        "matched_name": "ELLA BROOKS (vessel)",
+        "match_score": 1.0,
+        "list_record": {
+          "country": "XP",
+          "subject_type": "vessel"
+        },
+        "state": "FALSE_POSITIVE",
+        "reason": "list record is a vessel; screened party is a individual",
+        "matches": [],
+        "mismatches": [
+          "country"
+        ],
+        "unknown": [
+          "dob"
+        ],
+        "role": "owner"
+      }
+    ],
+    "decision_ready": true,
+    "sent_before_complete": false
+  }
+]

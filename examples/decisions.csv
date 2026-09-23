@@ -1,0 +1,14 @@
+case_id,legal_name,outcome,risk_score,risk_band,deciding_rules,owner,due_by,decision_ready,open_items
+C001,Brightline Software Ltd,AUTO_APPROVE,0,low,,System,2026-09-23T10:00:00+00:00,True,0
+C002,Harbour Freight Traders Ltd,ANALYST_REVIEW,40,medium,R-RISK-01,Compliance analyst,2026-09-23T18:00:00+00:00,True,0
+C003,Kestrel Design Studio Ltd,INCOMPLETE,0,low,R-DOC-01 R-DOC-02,Compliance analyst (outreach),2026-09-23T14:00:00+00:00,False,2
+C004,Orbit Digital Exchange Ltd,MLRO_ESCALATION,85,high,R-JUR-02 R-RISK-01,Group MLRO,2026-09-24T10:00:00+00:00,True,0
+C005,Meridian Holdings Ltd,REJECT,15,low,R-JUR-01,Compliance analyst (notification),2026-09-24T10:00:00+00:00,True,0
+C006,Northgate Analytics Ltd,AUTO_APPROVE,0,low,,System,2026-09-23T10:00:00+00:00,True,0
+C007,Coastal Metals Trading Ltd,MLRO_ESCALATION,40,medium,R-SCR-01,Group MLRO,2026-09-24T10:00:00+00:00,False,1
+C008,Aster Payments Ltd,MLRO_ESCALATION,70,high,R-SCR-02 R-RISK-01,Group MLRO,2026-09-24T10:00:00+00:00,True,0
+C009,Lumen Retail Co Ltd,INCOMPLETE,15,low,R-UBO-01 R-UBO-02,Compliance analyst (outreach),2026-09-23T14:00:00+00:00,False,2
+C010,Fairwind Ventures Ltd,MLRO_ESCALATION,15,low,R-UBO-04,Group MLRO,2026-09-24T10:00:00+00:00,True,0
+C011,Silverline Gaming Ltd,REJECT,10,low,R-SEC-01,Compliance analyst (notification),2026-09-24T10:00:00+00:00,True,0
+C012,Pinecrest Components Ltd,ANALYST_REVIEW,0,low,R-SCR-05,Compliance analyst,2026-09-23T18:00:00+00:00,False,1
+C013,Tidewater Labs Ltd,AUTO_APPROVE,10,low,,System,2026-09-23T10:00:00+00:00,True,0

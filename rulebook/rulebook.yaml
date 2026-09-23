@@ -1,0 +1,156 @@
+# The single source of truth for onboarding decisions.
+# The engine reads every threshold, list and rule from this file; nothing is
+# hard-coded. rulebook/RULEBOOK.md is generated from it (`python -m kyb render`)
+# and a test fails if the two drift apart.
+
+meta:
+  name: Sample KYB Onboarding Rulebook
+  version: 1.0.0
+  status: approved
+  effective_from: 2026-09-01
+  approved_by: Group MLRO (sample sign-off)
+  approved_on: 2026-08-28
+  next_review_by: 2027-02-28
+  policy: policy/aml_policy.md
+  change_log:
+    - version: 1.0.0
+      date: 2026-08-28
+      change: First approved version.
+
+# Outcome codes. `sla_hours` is the time allowed for the next action.
+outcomes:
+  AUTO_APPROVE:
+    label: Approved automatically, trading-ready
+    owner: System
+    sla_hours: 0
+  ANALYST_REVIEW:
+    label: Analyst review
+    owner: Compliance analyst
+    sla_hours: 8
+  INCOMPLETE:
+    label: Waiting on client information
+    owner: Compliance analyst (outreach)
+    sla_hours: 4
+  MLRO_ESCALATION:
+    label: MLRO decision required
+    owner: Group MLRO
+    sla_hours: 24
+  REJECT:
+    label: Rejected
+    owner: Compliance analyst (notification)
+    sla_hours: 24
+
+# What a fired rule does. Lower rank wins when several rules fire.
+# A sanctions match (escalate_immediate) outranks missing documents; every
+# other escalation waits until the file is complete (POL-7.2).
+effects:
+  reject:             {outcome: REJECT,          rank: 1}
+  escalate_immediate: {outcome: MLRO_ESCALATION, rank: 2}
+  incomplete:         {outcome: INCOMPLETE,      rank: 3}
+  escalate:           {outcome: MLRO_ESCALATION, rank: 4}
+  review:             {outcome: ANALYST_REVIEW,  rank: 5}
+
+client_response_days: 5
+
+risk_scoring:
+  bands:
+    low: {min: 0, max: 24}
+    medium: {min: 25, max: 49}
+    high: {min: 50, max: null}
+  auto_approve_bands: [low]
+  band_effects: {medium: review, high: escalate}
+  points:
+    jurisdiction: {low: 0, medium: 15, high: 35}
+    sector: {low: 0, medium: 15, high: 30}
+    young_company: {under_months: 12, points: 10}
+    volume:
+      - {above_usd: 250000, points: 10}
+      - {above_usd: 1000000, points: 20}
+    deep_ownership: 15
+    confirmed_pep: 30
+
+volume_escalation_usd: 5000000
+
+documents:
+  required:
+    company: [certificate_of_incorporation, register_of_directors, register_of_shareholders, proof_of_address, ubo_declaration]
+    partnership: [partnership_agreement, register_of_partners, proof_of_address, ubo_declaration]
+  max_age_days:
+    proof_of_address: 90
+    register_of_directors: 365
+    register_of_shareholders: 365
+    register_of_partners: 365
+    ubo_declaration: 365
+
+ownership:
+  ubo_threshold_pct: 25
+  reconcile_tolerance_pct: 0.5
+  max_layers: 2
+
+# Screening results arrive from a provider as potential matches. The rule below
+# compares identifiers the firm holds with identifiers on the list record.
+screening:
+  identifiers: [dob, country]
+  clear_on_type_mismatch: true
+  clear_false_positive:
+    min_mismatches: 2
+    max_matches: 0
+  clear_low_score:
+    below_score: 0.75
+    max_matches: 0
+  confirm:
+    at_or_above_score: 0.95
+    min_matches: 1
+    max_mismatches: 0
+  adverse_media_escalate_severity: [high]
+
+jurisdictions:
+  XA: {name: Jurisdiction A, rating: low}
+  XB: {name: Jurisdiction B, rating: low}
+  XC: {name: Jurisdiction C, rating: low}
+  XM: {name: Jurisdiction M, rating: medium}
+  XH: {name: Jurisdiction H, rating: high}
+  XJ: {name: Jurisdiction J, rating: high}
+  XP: {name: Jurisdiction P, rating: prohibited}
+
+sectors:
+  software: low
+  professional_services: low
+  manufacturing: low
+  ecommerce: medium
+  import_export: medium
+  marketing: medium
+  crypto_exchange: high
+  money_services: high
+  precious_metals: high
+  unlicensed_gambling: prohibited
+  shell_company_services: prohibited
+
+overrides:
+  reasons:
+    OVR-01: Information received after the automated decision
+    OVR-02: Screening hit resolved with evidence the system does not hold
+    OVR-03: Risk rating adjusted on a documented business rationale
+    OVR-04: Rulebook error identified (rulebook change raised)
+  mlro_only: [REJECT, MLRO_ESCALATION]
+  min_note_chars: 20
+
+rules:
+  - {id: R-DOC-01, name: Required documents present,               policy: POL-2.1, effect: incomplete,         check: required_documents}
+  - {id: R-DOC-02, name: Documents recent enough to rely on,        policy: POL-2.2, effect: incomplete,         check: document_age}
+  - {id: R-JUR-01, name: No prohibited jurisdiction,                policy: POL-3.1, effect: reject,             check: jurisdiction_prohibited}
+  - {id: R-JUR-02, name: High-risk jurisdiction needs EDD,          policy: POL-3.2, effect: escalate,           check: jurisdiction_high}
+  - {id: R-JUR-03, name: Every jurisdiction is rated,               policy: POL-3.3, effect: review,             check: jurisdiction_unknown}
+  - {id: R-SEC-01, name: No prohibited sector,                      policy: POL-4.1, effect: reject,             check: sector_prohibited}
+  - {id: R-SEC-02, name: Sector is rated,                           policy: POL-4.5, effect: review,             check: sector_unknown}
+  - {id: R-VOL-01, name: Expected volume under escalation threshold, policy: POL-4.3, effect: escalate,          check: volume_escalation}
+  - {id: R-UBO-01, name: UBOs identified and verified,              policy: POL-5.1, effect: incomplete,         check: ubo_verified}
+  - {id: R-UBO-02, name: Ownership reconciles to 100%,              policy: POL-5.2, effect: incomplete,         check: ownership_reconciles}
+  - {id: R-UBO-03, name: Ownership chain within depth limit,        policy: POL-5.3, effect: review,             check: ownership_depth}
+  - {id: R-UBO-04, name: No bearer shares or nominees,              policy: POL-5.4, effect: escalate,           check: bearer_or_nominee}
+  - {id: R-SCR-01, name: No confirmed sanctions match,              policy: POL-6.3, effect: escalate_immediate, check: sanctions_confirmed}
+  - {id: R-SCR-02, name: Confirmed PEP needs EDD,                   policy: POL-6.4, effect: escalate,           check: pep_confirmed}
+  - {id: R-SCR-03, name: High-severity adverse media,               policy: POL-6.5, effect: escalate,           check: adverse_media_high}
+  - {id: R-SCR-04, name: Other confirmed adverse media,             policy: POL-6.5, effect: review,             check: adverse_media_other}
+  - {id: R-SCR-05, name: No unresolved potential matches,           policy: POL-6.6, effect: review,             check: screening_unresolved}
+  - {id: R-RISK-01, name: Risk band eligible for auto-approval,     policy: POL-7.1, effect: by_band,            check: risk_band}

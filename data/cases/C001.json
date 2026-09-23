@@ -1,0 +1,72 @@
+{
+  "case_id": "C001",
+  "submitted_at": "2026-09-23T08:30:00Z",
+  "contact": {
+    "name": "Maya"
+  },
+  "entity": {
+    "legal_name": "Brightline Software Ltd",
+    "registration_number": "REG-001-2019",
+    "entity_type": "company",
+    "incorporation_jurisdiction": "XA",
+    "operating_jurisdictions": [
+      "XA"
+    ],
+    "incorporated_on": "2019-03-01",
+    "sector": "software",
+    "expected_monthly_volume_usd": 120000
+  },
+  "documents": [
+    {
+      "type": "certificate_of_incorporation",
+      "issued_on": "2019-03-01"
+    },
+    {
+      "type": "register_of_directors",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "register_of_shareholders",
+      "issued_on": "2026-03-15"
+    },
+    {
+      "type": "proof_of_address",
+      "issued_on": "2026-08-10"
+    },
+    {
+      "type": "ubo_declaration",
+      "issued_on": "2026-09-01"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Maya Collins",
+      "type": "individual",
+      "ownership_pct": 70,
+      "dob": "1986-04-12",
+      "nationality": "XA",
+      "id_verified": true
+    },
+    {
+      "name": "Tom Reyes",
+      "type": "individual",
+      "ownership_pct": 30,
+      "dob": "1984-11-02",
+      "nationality": "XA",
+      "id_verified": true
+    }
+  ],
+  "directors": [
+    {
+      "name": "Maya Collins",
+      "dob": "1986-04-12",
+      "nationality": "XA"
+    }
+  ],
+  "structure": {
+    "ownership_layers": 1,
+    "bearer_shares": false,
+    "nominee_shareholders": false
+  },
+  "screening": []
+}
